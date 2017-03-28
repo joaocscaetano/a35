@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mousetrap.js"></script>
+    <script src="js/hidestatusbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>OCHIO</title>
+
+
+</head>
+
+<body id="body">
+
+    <div class=main>
+            
+        <div class="nextimg">
+            <img src="img/next.png">
+        </div>
+        
+        <div class="previmg">
+            <img src="img/prev.png">
+        </div>
+
+        <!--Below is the image-->
+
+            <div id="img" style="position:absolute; left:50%; margin-left:-640px; top:175px;">
+               <img src="img/eye5.png">
+            </div>
+
+    </div>  
+    
+    <a id="prev" href="eyeimg4.html"></a>
+    <a id="next" href="eyeimg6.html"></a>    
+    <a id="menu" href="index.html"></a>
+
+    <script>
+
+        Mousetrap.bind('backspace', function() {
+            location.reload();
+        });
+        
+        function GoToLocation(url){
+            window.location = url;
+        }
+        
+        Mousetrap.bind('enter', function() {
+            GoToLocation(document.getElementById("menu").href);
+        });
+
+        Mousetrap.bind('left', function() {
+            GoToLocation(document.getElementById("prev").href);
+        });
+        
+        Mousetrap.bind('right', function() {
+            GoToLocation(document.getElementById("next").href);
+        });
+
+    </script>
+
+</body>
+
+</html>

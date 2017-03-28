@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mousetrap.js"></script>
+    <script src="js/hidestatusbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>OCHIO</title>
+
+
+</head>
+
+<body id="body">
+
+    <div class=main>
+
+        <div id="red" class="red"></div>
+
+        <div id="green" class="green"></div>
+
+        <div class=container>
+
+            <div id="r11" class="r11">
+                <div id="l11" class="l121">
+                    <div class="av01">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 340.28 500.00" enable-background="new 0 0 340.28 500.00" xml:space="preserve">
+                            <g>
+                                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 0,500L 0,0L 340.278,0L 340.278,83.3333L 97.2222,83.3333L 97.2222,201.389L 312.5,201.389L 312.5,284.722L 97.2222,284.722L 97.2222,500L 0,500 Z "/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div id="l21" class="l221">
+                    <div class="av01">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 388.89 500.00" enable-background="new 0 0 388.89 500.00" xml:space="preserve">
+                            <g>
+                                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 145.833,500L 145.833,83.3333L 0,83.3333L 0,0L 388.889,0L 388.889,83.3333L 243.056,83.3333L 243.056,500L 145.833,500 Z "/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="avmidle2">
+                    <img src="img/AV01.png">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a id="prev" href="r005.html"></a>
+    <a id="next" href="r0203.html"></a>
+    <a id="menu" href="index.html"></a>
+    <a id="b6" href="logmar100.html"></a>
+    <a id="b7" href="parent.html"></a>
+    <a id="b8" href="schober.html"></a>
+    <a id="b9" href="ish01.html"></a>
+    <a id="b0" href="eyeimg1.html"></a>
+
+    <script>
+        function GoToLocation(url) {
+            window.location = url;
+        }
+
+        Mousetrap.bind('left', function() {
+            GoToLocation(document.getElementById("prev").href);
+        });
+
+        Mousetrap.bind('right', function() {
+            GoToLocation(document.getElementById("next").href);
+        });
+
+        Mousetrap.bind('enter', function() {
+            GoToLocation(document.getElementById("menu").href);
+        });
+
+        Mousetrap.bind('6', function() {
+            GoToLocation(document.getElementById("b6").href);
+        });
+
+        Mousetrap.bind('7', function() {
+            GoToLocation(document.getElementById("b7").href);
+        });
+
+        Mousetrap.bind('8', function() {
+            GoToLocation(document.getElementById("b8").href);
+        });
+
+        Mousetrap.bind('9', function() {
+            GoToLocation(document.getElementById("b9").href);
+        });
+
+        Mousetrap.bind('0', function() {
+            GoToLocation(document.getElementById("b0").href);
+        });
+
+
+        function allclear() {
+            document.getElementById('r11').style.display = 'block';
+            document.getElementById('l11').style.display = 'block';
+            document.getElementById('l21').style.display = 'block';
+        }
+
+        Mousetrap.bind('down', function() {
+            document.body.style.WebkitFilter = "invert(1)";
+        });
+
+        Mousetrap.bind('up', function() {
+            document.body.style.WebkitFilter = "invert(0)";
+        });
+
+        Mousetrap.bind('backspace', function() {
+            location.reload();
+        });
+
+        Mousetrap.bind('4', function() {
+            allclear();
+            document.getElementById('red').style.display = 'block';
+            document.getElementById('green').style.display = 'block';
+        });
+
+        Mousetrap.bind('5', function() {
+            allclear();
+            var x = document.querySelectorAll(".l121");
+            var y = document.querySelectorAll(".l221");
+            x[0].className = "l221";
+            y[0].className = "l121";
+        });
+
+        Mousetrap.bind('1', function() {
+            allclear();
+            document.getElementById('l21').style.display = 'none';
+        });
+
+        Mousetrap.bind('2', function() {
+            allclear();
+            document.getElementById('l11').style.display = 'none';
+        });
+        
+    </script>
+
+</body>
+
+</html>

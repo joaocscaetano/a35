@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mousetrap.js"></script>
+    <script src="js/hidestatusbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>OCHIO</title>
+
+
+</head>
+
+<body id="body">
+
+    <div class=main>
+
+        <div class="nextimg">
+            <img src="img/next.png">
+        </div>
+
+        <div class="previmg">
+            <img src="img/prev.png">
+        </div>
+
+        <div class="svcrow">
+            <img src="img/c.png">
+        </div>
+
+
+        <div class="container">
+
+
+            <div class="svcline1">
+                <img src="img/line4.png">
+            </div>
+
+            <div class="svcline2">
+                <img src="img/line5.png">
+            </div>
+
+            <div class="svcline3">
+                <img src="img/line6.png">
+            </div>
+
+            <div class="svc1">
+                <img src="img/scv_control.png">
+            </div>
+
+            <div class="svc2">
+                <img src="img/svc4c.png">
+            </div>
+
+            <div class="svc3">
+                <img src="img/scv_control.png">
+            </div>
+
+            <div class="svc4">
+                <img src="img/svc5c.png">
+            </div>
+
+            <div class="svc5">
+                <img src="img/svc6c.png">
+            </div>
+
+            <div class="svc6">
+                <img src="img/scv_control.png">
+            </div>
+
+        </div>
+    </div>
+
+    <a id="prev" href="svc1c.html"></a>
+    <a id="next" href="svc1d.html"></a>
+    <a id="menu" href="index.html"></a>
+    <a id="b1" href="r0709.html"></a>
+    <a id="b2" href="n0709.html"></a>
+    <a id="b3" href="e0709.html"></a>
+    <a id="b4" href="k0710.html"></a>
+    <a id="b5" href="svc1a.html"></a>
+    <a id="b6" href="logmar100.html"></a>
+    <a id="b7" href="parent.html"></a>
+    <a id="b8" href="schober.html"></a>
+    <a id="b9" href="ish01.html"></a>
+
+    <script>
+        Mousetrap.bind('backspace', function() {
+            location.reload();
+        });
+
+        function GoToLocation(url) {
+            window.location = url;
+        }
+
+        Mousetrap.bind('enter', function() {
+            GoToLocation(document.getElementById("menu").href);
+        });
+
+        Mousetrap.bind('left', function() {
+            GoToLocation(document.getElementById("prev").href);
+        });
+
+        Mousetrap.bind('right', function() {
+            GoToLocation(document.getElementById("next").href);
+        });
+
+        Mousetrap.bind('1', function() {
+            GoToLocation(document.getElementById("b1").href);
+        });
+        
+        Mousetrap.bind('2', function() {
+            GoToLocation(document.getElementById("b2").href);
+        });
+        
+        Mousetrap.bind('3', function() {
+            GoToLocation(document.getElementById("b3").href);
+        });
+
+        Mousetrap.bind('4', function() {
+            GoToLocation(document.getElementById("b4").href);
+        });
+        
+        Mousetrap.bind('5', function() {
+            GoToLocation(document.getElementById("b5").href);
+        });
+        
+        Mousetrap.bind('6', function() {
+            GoToLocation(document.getElementById("b6").href);
+        });
+
+        Mousetrap.bind('7', function() {
+            GoToLocation(document.getElementById("b7").href);
+        });
+        
+        Mousetrap.bind('8', function() {
+            GoToLocation(document.getElementById("b8").href);
+        });
+        
+        Mousetrap.bind('9', function() {
+            GoToLocation(document.getElementById("b9").href);
+        });
+
+    </script>
+
+</body>
+
+</html>

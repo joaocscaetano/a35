@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mousetrap.js"></script>
+    <script src="js/hidestatusbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>OCHIO</title>
+
+
+</head>
+
+<body id="body">
+
+    <div class=main>
+
+        <div id="red" class="red"></div>
+
+        <div id="green" class="green"></div>
+
+        <div class=container>
+
+            
+                <div id="l11" class="l11">
+                    <div class="av005">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 381.94 500.00" enable-background="new 0 0 381.94 500.00" xml:space="preserve">
+                            <g>
+                                <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 0,500L 0,0L 375,0L 375,83.3333L 97.2222,83.3333L 97.2222,194.444L 354.167,194.444L 354.167,277.778L 97.2222,277.778L 97.2222,416.667L 381.944,416.667L 381.944,500L 0,500 Z "/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="avmidle3">
+                    <img src="img/AV005.png">
+                </div>
+            
+
+        </div>
+
+    </div>
+
+
+    <a id="next" href="r01.html"></a>
+    <a id="menu" href="index.html"></a>
+    <a id="b6" href="logmar100.html"></a>
+    <a id="b7" href="parent.html"></a>
+    <a id="b8" href="schober.html"></a>
+    <a id="b9" href="ish01.html"></a>
+    <a id="b0" href="eyeimg1.html"></a>
+
+    <script>
+        function GoToLocation(url) {
+            window.location = url;
+        }
+
+        Mousetrap.bind('right', function() {
+            GoToLocation(document.getElementById("next").href);
+        });
+
+        Mousetrap.bind('enter', function() {
+            GoToLocation(document.getElementById("menu").href);
+        });
+
+        Mousetrap.bind('6', function() {
+            GoToLocation(document.getElementById("b6").href);
+        });
+
+        Mousetrap.bind('7', function() {
+            GoToLocation(document.getElementById("b7").href);
+        });
+
+        Mousetrap.bind('8', function() {
+            GoToLocation(document.getElementById("b8").href);
+        });
+
+        Mousetrap.bind('9', function() {
+            GoToLocation(document.getElementById("b9").href);
+        });
+
+        Mousetrap.bind('0', function() {
+            GoToLocation(document.getElementById("b0").href);
+        });
+
+
+        Mousetrap.bind('down', function() {
+            document.body.style.WebkitFilter = "invert(1)";
+        });
+
+        Mousetrap.bind('up', function() {
+            document.body.style.WebkitFilter = "invert(0)";
+        });
+
+        Mousetrap.bind('backspace', function() {
+            location.reload();
+        });
+
+        Mousetrap.bind('4', function() {
+            document.getElementById('red').style.display = 'block';
+            document.getElementById('green').style.display = 'block';
+        });
+
+        
+    </script>
+
+</body>
+
+</html>

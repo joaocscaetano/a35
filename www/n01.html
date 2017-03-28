@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/mousetrap.js"></script>
+    <script src="js/hidestatusbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>OCHIO</title>
+
+
+</head>
+
+<body id="body">
+
+    <div class=main>
+
+        <div id="red" class="red"></div>
+
+        <div id="green" class="green"></div>
+
+        <div class=container>
+
+            <div id="r11" class="r11">
+                <div id="l11" class="l121">
+                    <div class="av01">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 269.07 398.00" enable-background="new 0 0 269.07 398.00" xml:space="preserve">
+                            <g>
+                                <path fill="#000000" fill-opacity="1" stroke-linejoin="round" d="M 99.0621,323.463L 99.0621,325.127L 263.465,325.127L 263.465,398L 0,398L 0,329.506L 115.879,221.685C 139.236,200.08 155.659,181.964 165.147,167.337C 174.636,152.71 179.38,137.338 179.38,121.222C 179.38,85.2524 159.031,67.2676 118.331,67.2676C 82.9459,67.2676 49.1077,80.3474 16.8169,106.507L 16.8169,30.393C 52.2025,10.131 92.1134,3.05176e-005 136.55,3.05176e-005C 178.183,3.05176e-005 210.678,9.98505 234.035,29.9551C 257.392,49.9252 269.07,76.9023 269.07,110.886C 269.07,156.257 240.458,203.146 183.234,251.553L 99.0621,323.463 Z "/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div id="l21" class="l221">
+                    <div class="av01">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" width="100%" height="100%" viewBox="0 0 270.86 398.00" enable-background="new 0 0 270.86 398.00" xml:space="preserve">
+                            <g>
+                                <path fill="#000000" fill-opacity="1" stroke-linejoin="round" d="M 243.222,11.0555L 243.222,82.9167C 224.048,71.8611 203.088,66.3333 180.344,66.3333C 152.359,66.3333 129.773,76.8563 112.585,97.9021C 95.3973,118.948 86.4579,147.119 85.7669,182.417L 87.3216,182.417C 105.575,156.62 132.206,143.722 167.215,143.722C 199,143.722 224.22,154.648 242.877,176.5C 261.533,198.352 270.861,227.243 270.861,263.174C 270.861,301.868 258.352,334.013 233.333,359.608C 208.314,385.203 176.486,398 137.849,398C 94.6056,398 60.8199,382.338 36.492,351.014C 12.164,319.69 0,275.784 0,219.297C 0,152.734 15.6189,99.5432 46.8566,59.7259C 78.0943,19.9087 120.517,-7.62939e-006 174.125,-7.62939e-006C 203.779,-7.62939e-006 226.812,3.68517 243.222,11.0555 Z M 138.367,204.528C 123.108,204.528 110.973,210.012 101.962,220.982C 92.9501,231.951 88.4444,245.986 88.4444,263.088C 88.4444,281.974 93.0365,298.126 102.221,311.542C 111.405,324.958 123.626,331.667 138.885,331.667C 153.741,331.667 165.632,325.678 174.557,313.701C 183.482,301.725 187.944,286.12 187.944,266.888C 187.944,225.315 171.419,204.528 138.367,204.528 Z "/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="avmidle2">
+                    <img src="img/AV01.png">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a id="next" href="n0203.html"></a>
+    <a id="menu" href="index.html"></a>
+    <a id="b6" href="logmar100.html"></a>
+    <a id="b7" href="parent.html"></a>
+    <a id="b8" href="schober.html"></a>
+    <a id="b9" href="ish01.html"></a>
+    <a id="b0" href="eyeimg1.html"></a>
+
+    <script>
+        function GoToLocation(url) {
+            window.location = url;
+        }
+
+        Mousetrap.bind('right', function() {
+            GoToLocation(document.getElementById("next").href);
+        });
+
+        Mousetrap.bind('enter', function() {
+            GoToLocation(document.getElementById("menu").href);
+        });
+
+        Mousetrap.bind('6', function() {
+            GoToLocation(document.getElementById("b6").href);
+        });
+
+        Mousetrap.bind('7', function() {
+            GoToLocation(document.getElementById("b7").href);
+        });
+
+        Mousetrap.bind('8', function() {
+            GoToLocation(document.getElementById("b8").href);
+        });
+
+        Mousetrap.bind('9', function() {
+            GoToLocation(document.getElementById("b9").href);
+        });
+
+        Mousetrap.bind('0', function() {
+            GoToLocation(document.getElementById("b0").href);
+        });
+
+
+        function allclear() {
+            document.getElementById('r11').style.display = 'block';
+            document.getElementById('l11').style.display = 'block';
+            document.getElementById('l21').style.display = 'block';
+        }
+
+        Mousetrap.bind('down', function() {
+            document.body.style.WebkitFilter = "invert(1)";
+        });
+
+        Mousetrap.bind('up', function() {
+            document.body.style.WebkitFilter = "invert(0)";
+        });
+
+        Mousetrap.bind('backspace', function() {
+            location.reload();
+        });
+
+        Mousetrap.bind('4', function() {
+            allclear();
+            document.getElementById('red').style.display = 'block';
+            document.getElementById('green').style.display = 'block';
+        });
+
+        Mousetrap.bind('5', function() {
+            allclear();
+            var x = document.querySelectorAll(".l121");
+            var y = document.querySelectorAll(".l221");
+            x[0].className = "l221";
+            y[0].className = "l121";
+        });
+
+        Mousetrap.bind('1', function() {
+            allclear();
+            document.getElementById('l21').style.display = 'none';
+        });
+
+        Mousetrap.bind('2', function() {
+            allclear();
+            document.getElementById('l11').style.display = 'none';
+        });
+        
+    </script>
+
+</body>
+
+</html>

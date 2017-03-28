@@ -1,0 +1,796 @@
+body{
+    background: #fff;
+    margin: 0 0 0 0;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  Base  */
+.main{
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+
+.maindark{
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+}
+
+
+.red{
+    width: 50%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    background-color: red;
+    z-index: 2;
+    display: none;
+}
+
+.green{
+    width: 50%;
+    height: 100%;
+    right:0px;
+    position: absolute;
+    background-color: green;
+    z-index: 2;
+    display: none;
+}
+
+/*  Distâncias e percentagem  */
+
+.container{
+    margin: auto;
+    width: 58.33%;
+    height: 58.33%;
+    top: 20.84%;
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.containerish{
+    margin: auto;
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+}
+
+
+/*  Linhas  */
+
+.r11{
+    width: 100%;
+    height: 37.04%;
+    top:31.48%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.r12{
+    width: 100%;
+    height: 18.52%;
+    top:20.99%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.r22{
+    width: 100%;
+    height: 18.52%;
+    top:60.49%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.r13{
+    width: 100%;
+    height: 12.96%;
+    top:15.28%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.r23{
+    width: 100%;
+    height: 12.96%;
+    top:43.52%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.r33{
+    width: 100%;
+    height: 12.96%;
+    top:71.76%;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+}
+
+/*  Letras  */
+
+.l11{
+    width: 41.67%;
+    height: 74.07%;
+    left: 29.17%;
+    top: 12.97%;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l121{
+    width: 20.83%;
+    height: 100%;
+    left: 19.45%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l221{
+    width: 20.83%;
+    height: 100%;
+    left: 59.72%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+
+.l142{
+    width: 10.42%;
+    height: 100%;
+    left: 11.66%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l242{
+    width: 10.42%;
+    height: 100%;
+    left: 33.74%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l342{
+    width: 10.42%;
+    height: 100%;
+    left: 55.82%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l442{
+    width: 10.42%;
+    height: 100%;
+    left: 77.9%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+
+.l143{
+    width: 7.29%;
+    height: 100%;
+    left: 23.17%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l243{
+    width: 7.29%;
+    height: 100%;
+    left: 38.63%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l343{
+    width: 7.29%;
+    height: 100%;
+    left: 54.09%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.l443{
+    width: 7.29%;
+    height: 100%;
+    left: 69.55%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+/*  Optotipos  */
+
+.dots{
+    width: 17.79%;
+    height: 35.19%;
+    left: 41.1%;
+    top: 32.40%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.parent{
+    width: 39.06%;
+    height: 69.44%;
+    left: 30.47%;
+    top: 15.28%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.schober{
+    width: 41.67%;
+    height: 74.07%;
+    left: 29.16%;
+    top: 12.96%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.worth{
+    width: 36.98%;
+    height: 65.74%;
+    left: 31.51%;
+    top: 17.13%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.colun{
+    width: 6.0%;
+    height: 74.07%;
+    left: 46.98%;
+    top: 12.96%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.logmar{
+    width: 62.5%;
+    height: 83.33%;
+    left: 11.09%;
+    top: 8.33%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.ish{
+    width: 36.46%;
+    height: 64.81%;
+    left: 31.77%;
+    top: 17.62%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+/*  SVG Containers  */
+
+.av15{
+    width: 16.76%;
+    height: 16.76%;
+    left: 41.62%;
+    top: 41.62%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av12{
+    width: 20.95%;
+    height: 20.95%;
+    left: 39.53%;
+    top: 39.53%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av10{
+    width: 25.13%;
+    height: 25.13%;
+    left: 37.43%;
+    top: 37.43%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av09{
+    width: 27.93%;
+    height: 27.93%;
+    left: 36.04%;
+    top: 36.04%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av08{
+    width: 31.42%;
+    height: 31.42%;
+    left: 34.29%;
+    top: 34.29%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av07{
+    width: 35.91%;
+    height: 35.91%;
+    left: 32.05%;
+    top: 32.05%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av06{
+    width: 41.89%;
+    height: 41.89%;
+    left: 29.05%;
+    top: 29.05%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av05{
+    width: 50.27%;
+    height: 50.27%;
+    left: 24.87%;
+    top: 24.87%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av04{
+    width: 62.84%;
+    height: 62.84%;
+    left: 18.58%;
+    top: 18.58%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av03{
+    width: 58.65%;
+    height: 58.65%;
+    left: 20.68%;
+    top: 20.68%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av02{
+    width: 87.97%;
+    height: 87.97%;
+    left: 6.01%;
+    top: 6.01%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av01{
+    width: 87.97%;
+    height: 87.97%;
+    left: 6.01%;
+    top: 6.01%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.av005{
+    width: 87.97%;
+    height: 87.97%;
+    left: 6.01%;
+    top: 6.01%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.avmidle{
+    width: 2.6%;
+    height: 35.71%;
+    left: 95%;
+    top: 32.14%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avtop{
+    width: 2.6%;
+    height: 35.71%;
+    left: 95%;
+    top: 32.14%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avbottom{
+    width: 2.6%;
+    height: 35.71%;
+    left: 95%;
+    top: 32.15%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avtop2{
+    width: 2.6%;
+    height: 25%;
+    left: 95%;
+    top: 37.5%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avbottom2{
+    width: 2.6%;
+    height: 25%;
+    left: 95%;
+    top: 37.5%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avmidle2{
+    width: 2.6%;
+    height: 12.5%;
+    left: 95%;
+    top: 43.75%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.avmidle3{
+    width: 2.6%;
+    height: 4.63%;
+    left: 95%;
+    top: 47.68%;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+/*  Navigation Aux  */
+
+.next{
+    width: 5.2%;
+    height: 9.26%;
+    left: 81.77%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+.prev{
+    width: 5.2%;
+    height: 9.26%;
+    left: 13.02%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.nextdark{
+    width: 5.2%;
+    height: 9.26%;
+    left: 81.77%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+
+.prevdark{
+    width: 5.2%;
+    height: 9.26%;
+    left: 13.02%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+.nextlogmar{
+    width: 5.2%;
+    height: 9.26%;
+    left: 90.77%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+.prevlogmar{
+    width: 5.2%;
+    height: 9.26%;
+    left: 4.02%;
+    top: 20%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+
+/*  eye images  */
+
+.nextimg{
+    width: 5.2%;
+    height: 9.26%;
+    left: 91.77%;
+    top: 45.37%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+.previmg{
+    width: 5.2%;
+    height: 9.26%;
+    left: 3.02%;
+    top: 45.37%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+/*  Ishihara  */
+
+.nextish{
+    width: 5.2%;
+    height: 9.26%;
+    left: 81.77%;
+    top: 45.37%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+.prevish{
+    width: 5.2%;
+    height: 9.26%;
+    left: 13.02%;
+    top: 45.37%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+.question{
+    width: 10.4%;
+    height: 9.26%;
+    left: 13.02%;
+    top: 10%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+.result{
+    width: 5.2%;
+    height: 9.26%;
+    left: 15.62%;
+    top: 21%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+    display: none;
+    animation-name: background;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes background {
+    from {background-color: #7fff7f;}
+    to {background-color: #ffff7f;}
+}
+
+
+/*  SVC  */
+
+.svcrow{
+    width: 5.2%;
+    height: 9.26%;
+    left: 5.94%;
+    top: 0%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svcline1{
+    width: 5.2%;
+    height: 9.26%;
+    left: 20.21%;
+    top: 0%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svcline2{
+    width: 5.2%;
+    height: 9.26%;
+    left: 47.4%;
+    top: 0%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svcline3{
+    width: 5.2%;
+    height: 9.26%;
+    left: 74.58%;
+    top: 0%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc1{
+    width: 21.98%;
+    height: 39.07%;
+    left: 11.82%;
+    top: 9.26%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc2{
+    width: 21.98%;
+    height: 39.07%;
+    left: 11.82%;
+    top: 51.67%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc3{
+    width: 21.98%;
+    height: 39.07%;
+    left: 39.01%;
+    top: 9.26%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc4{
+    width: 21.98%;
+    height: 39.07%;
+    left: 39.01%;
+    top: 51.67%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc5{
+    width: 21.98%;
+    height: 39.07%;
+    left: 66.20%;
+    top: 9.26%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.svc6{
+    width: 21.98%;
+    height: 39.07%;
+    left: 66.20%;
+    top: 51.67%;
+    position: absolute;
+    z-index: 6;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+/*  Links  */
+a{
+    display: none;
+    z-index: -10;
+}
